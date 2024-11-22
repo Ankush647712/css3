@@ -1,0 +1,200 @@
+/* Importing Google Fonts for custom typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #FFE9B0, #FFD55A); /* Soft Mango to Bright Yellow gradient */
+  color: #5A3A2B; /* Rich Brown for text */
+  padding: 0 20px;
+  overflow-x: hidden;
+}
+
+/* Container for centralizing content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styling */
+header {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  background: #FFA726; /* Vibrant Mango Orange */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Title */
+header h1 {
+  font-size: 4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Subheading in header */
+header p {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+/* Main Section */
+section {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+#flavor-description {
+  margin-left: 400px;
+}
+
+#intro {
+  align-items: center;
+  margin-left: 400px;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+  transform: scale(1.1);
+}
+
+/* Ice Cream Text */
+section .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+section .content h2 {
+  font-size: 2.5rem;
+  color: #FFA726; /* Vibrant Mango Orange for headings */
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+section .content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #444; /* Subtle Grey text for content */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background: #FFA726; /* Vibrant Mango Orange */
+  color: white;
+  padding: 40px 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  text-align: center;
+}
+
+footer .logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+footer .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+
+footer .contact-form input,
+footer .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+
+footer .contact-form button {
+  background: #FFCA28; /* Bright Yellow Mango button */
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+footer .contact-form button:hover {
+  background-color: #F57C00; /* Darker Mango Orange */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  section img {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation for Fade In */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gradient Background for Body */
+body {
+  background: radial-gradient(circle, rgba(255, 223, 186, 0.8), rgba(255, 186, 102, 0.8));
+  background-attachment: fixed;
+}
+
+/* Hover effect for buttons and links */
+button:hover, a:hover {
+  background-color: #F57C00; /* Darker Mango Orange */
+  color: white;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
